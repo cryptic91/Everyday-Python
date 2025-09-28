@@ -1,3 +1,6 @@
+{% comment %} my store new order staff notifications {% endcomment %}
+
+
 {% assign delivery_method_types = delivery_agreements | map: 'delivery_method_type' | uniq %}
 {% if delivery_method_types.size > 1 %}
   {% assign has_split_cart = true %}
